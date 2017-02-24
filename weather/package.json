@@ -28,6 +28,7 @@
     "forecast"
   ],
   "dependencies": {
+    "assert": "^1.4.1",
     "chalk": "~1.1.1",
     "lodash": "^4.17.4",
     "meow": "~3.7.0",
