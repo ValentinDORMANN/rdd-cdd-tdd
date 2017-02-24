@@ -1,7 +1,6 @@
 # Cli weather
 
 Check the weather for your city from your terminal
-default: Dhaka (Bangladesh) in Celcius
 
 ## Getting Started
 
@@ -17,6 +16,22 @@ These instructions will get you a copy of the project up and running on your loc
 1. install packages 
 ```sh
 npm install --save
+```
+1. chalk (Version ~1.1.1)
+1. lodash (Version ^4.17.4)
+1. meow (Version ~3.7.0)
+1. request (Version ~2.79.0)
+1. update-notifier (Version 2.1.0)
+1. yql (Version ^1.0.2)
+
+##How to use
+1. open node terminal
+1. move in rdd-cdd-tdd/weather
+1. execute command "node cli.js [City] [Country] [Scale]
+default: Dhaka (Bangladesh) in Celcius
+scale: C Celcius, F Fahrenheit
+```sh
+node cli.js Paris France F
 ```
 
 ## Running the tests
@@ -57,7 +72,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## Authors
 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
+* **Yassine AZZOUT** - *Initial work* - [92bondstreet](https://github.com/92bondstreet)
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
@@ -66,7 +81,3 @@ See also the list of [contributors](https://github.com/your/project/contributors
 [Uncopyrighted](http://zenhabits.net/uncopyright/)
 
 ## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
