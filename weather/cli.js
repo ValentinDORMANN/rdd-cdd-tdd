@@ -24,13 +24,24 @@ const cli = meow({
 		'  Temperature: 32C'
 	]
 });
-
+/**
+ * Convert Temperature from fahrenheit to celcius
+ * @param  {double} temp temperature in fahrenheit
+ * @return {double}      temperature in celcius
+ */
 function _toCelcius(temp) {
 	return Math.round(((temp - 32) * 5) / 9);
 }
 
 updateNotifier({ pkg}).notify();
 
+/**
+ * Display in terminal weather condition from city
+ * @param  {Array[3]} cli.input content respectively City, Country, Scale (C/F)
+ * @param  {Error}    err       error launched when unreconized command
+ * @param  {double}   result    
+ * @return {void}               display in termianl
+ */
 weather(cli.input, (err, result) => {
 	if (err) {
 		console.log(chalk.bold.red(err));
